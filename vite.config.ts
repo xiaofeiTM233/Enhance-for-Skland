@@ -4,7 +4,7 @@ import viteCompression from 'vite-plugin-compression';
 
 // https://vitejs.dev/config/
 export default defineConfig(({command}) => {
-    const base = command === 'build' ? '/Enhance-for-Skland/' : '/';
+    const base = '/';
 
     return {
         plugins: [react(), viteCompression({
