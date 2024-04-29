@@ -11,11 +11,20 @@ import 'primeflex/primeflex.css';
 import '@icon-park/react/styles/index.css';
 
 axios.defaults.baseURL = 'https://zonai.skland.com';
+axios.defaults.headers.common = {
+    'User-Agent': 'Skland/1.5.1 (com.hypergryph.skland; build:100501001; Android 33; ) Okhttp/4.11.0',
+    'Accept-Encoding': 'gzip',
+    'Connection': 'close',
+    'Origin': 'https://www.skland.com',
+    'Referer': 'https://www.skland.com/',
+    'Content-Type': 'application/json; charset=utf-8'
+};
 axios.defaults.headers.platform = 1;
-axios.defaults.headers.os = 32;
+axios.defaults.headers.os = 33;
+axios.defaults.headers.dId = 'de9759a5afaa634f';
 axios.defaults.headers.language = 'zh-cn';
-axios.defaults.headers.vName = '0.1.4';
-axios.defaults.headers.manufacturer = 'Samsung';
+axios.defaults.headers.vName = '1.5.1';
+axios.defaults.headers.manufacturer = 'Xiaomi';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     <HashRouter>
